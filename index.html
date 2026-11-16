@@ -1,103 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f1e8">
-  <title>Minha primeira página Web | Fabiana</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="page">
-    <header class="topline">
-      <div class="brand">
-        <span class="brand-mark" aria-hidden="true">F</span>
-        <span>Fabiana</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio pessoal de Fabiana." />
+    <title>Fabiana | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#inicio">Fabiana</a>
+
+        <nav aria-label="Menu principal">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Aprendizados</a>
+          <a href="#contato">Contato</a>
+        </nav>
       </div>
-      <div class="course">Programação Web · 01</div>
     </header>
 
     <main>
-      <section aria-labelledby="page-title">
-        <p class="eyebrow">Meu primeiro projeto</p>
-        <h1 id="page-title">Minha primeira página <span>Web</span></h1>
-        <p class="intro">
-          Olá! Eu sou Fabiana. Esta é minha primeira página desenvolvida na disciplina Programação Web.
-        </p>
+      <section class="hero container" id="inicio">
+        <div class="hero-text">
+          <p class="eyebrow">Estudante de Programação Web</p>
+          <h1>Olá, eu sou <span>Fabiana</span>.</h1>
+          <p class="lead">
+            Gosto de tecnologia, criatividade e de aprender a criar páginas para a Web.
+            Este é meu espaço para compartilhar um pouco da minha trajetória.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn primary">Ver aprendizados</a>
+            <a href="#contato" class="btn secondary">Entrar em contato</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <img src="foto.jpg.jpeg" alt="Foto de Fabiana" />
+          </div>
+        </div>
       </section>
 
-      <aside class="profile" aria-label="Foto de Fabiana">
-        <img src="foto.jpg.jpeg" alt="Foto de Fabiana" width="180">
-        <div class="profile-note">
-          <span>Começo de jornada</span>
-          <span>2026</span>
+      <section class="about container" id="sobre">
+        <div class="section-title">
+          <p class="eyebrow">Um pouco sobre mim</p>
+          <h2>Quem sou eu</h2>
         </div>
-      </aside>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Minha trajetória</h3>
+            <p>
+              Sou estudante de Programação Web e estou aprendendo a criar páginas
+              organizadas, acessíveis e agradáveis de usar. Quero continuar
+              desenvolvendo minhas habilidades e colocando novas ideias em prática.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Meus interesses</h3>
+            <ul>
+              <li>Desenvolvimento para a Web</li>
+              <li>Criação e organização de páginas</li>
+              <li>Design responsivo</li>
+              <li>Aprender coisas novas</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects container" id="projetos">
+        <div class="section-title">
+          <p class="eyebrow">Em desenvolvimento</p>
+          <h2>O que estou aprendendo</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>HTML</h3>
+            <p>Como organizar o conteúdo de uma página usando elementos HTML.</p>
+          </article>
+
+          <article class="project-card">
+            <h3>CSS</h3>
+            <p>Como aplicar estilos e criar layouts que se adaptam a diferentes telas.</p>
+          </article>
+
+          <article class="project-card">
+            <h3>Git e GitHub</h3>
+            <p>Como guardar, organizar e compartilhar os arquivos dos meus projetos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact container" id="contato">
+        <div class="section-title">
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos conversar</h2>
+        </div>
+
+        <div class="contact-form">
+          <p>
+            Você pode me encontrar no Instagram. Ficarei feliz em conversar!
+          </p>
+          <a
+            class="btn primary"
+            href="https://www.instagram.com/fabiana.soliveira__/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar meu Instagram
+          </a>
+        </div>
+      </section>
     </main>
 
-    <section class="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Tecnologias e Interesses</h2>
-
-      <div class="card-grid">
-        <article class="card">
-          <h3>HTML</h3>
-          <p>Aprendendo a criar a estrutura das páginas web.</p>
-          <ul class="tags">
-            <li>Web</li>
-            <li>Estrutura</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>CSS</h3>
-          <p>Explorando cores, estilos e layouts para páginas.</p>
-          <ul class="tags">
-            <li>Estilo</li>
-            <li>Layout</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Git e GitHub</h3>
-          <p>Usando ferramentas para guardar e compartilhar projetos.</p>
-          <ul class="tags">
-            <li>Projetos</li>
-            <li>Versionamento</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Meus interesses</h3>
-          <p>Gosto de aprender tecnologia e criar coisas para a Web.</p>
-          <ul class="tags">
-            <li>Aprendizado</li>
-            <li>Criatividade</li>
-          </ul>
-        </article>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Fabiana dos Santos Oliveira</p>
       </div>
-    </section>
-
-    <section class="details" aria-label="Sobre a página">
-      <div>
-        <h2>Conhecendo o ambiente</h2>
-        <p>Um primeiro passo para conhecer as ferramentas e possibilidades do desenvolvimento para a Web.</p>
-      </div>
-      <div>
-        <h2>Tecnologias utilizadas</h2>
-        <ul class="tech-list">
-          <li>HTML</li>
-          <li>Git</li>
-          <li>GitHub</li>
-        </ul>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>Feito por Fabiana</span>
-      <span>Minha primeira página Web</span>
     </footer>
-  </div>
-</body>
+  </body>
 </html>
-
- 
